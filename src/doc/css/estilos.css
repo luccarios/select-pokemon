@@ -1,0 +1,99 @@
+body {
+    font: 1.4em "Press start 2P";
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -1px -1px 0px #000000, 
+    -1px 1px 0px #000000,                    
+    2px -1px 0px #000000,                  
+    3px 0px 0px #000000;
+    background-image: url(/src/doc/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 65px;
+}
+
+ul {
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(55, 55, 155);
+    border: solid rgb(210, 186, 30) 9px;
+}
+
+.selecao-de-personagens .personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    gap: 25px;
+
+}
+
+.selecao-de-personagens .personagens .titulo{
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+
+.lista .personagem.selecionado{
+    box-shadow: 0px 0px 25px 3px rgb(220, 206, 60);
+}
+
+.personagem-selecionado{
+    text-align: center;
+    max-height: 500px;
+}
+
+.personagem-selecionado .personagem-grande{
+    width: 430px;
+    height: 430px;
+    gap: 30px;
+}
+
+.personagem-selecionado .nome-personagem{
+    margin-top: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.lista .personagem{
+    border: solid rgb(0, 0, 0) 9px;
+    border-radius: 9px;
+}
